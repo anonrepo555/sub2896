@@ -64,7 +64,7 @@ LAO_BFGS.load_state_dict(torch.load("Data/pretrained_LOA_BFGS_Model.npy"))
 
 #%%
 ########## Run the algorithm #########
-niter_max = P + 300
+niter_max = P + 1000
 Wolfe_LS = True
 
 LAO_BFGS.reset_mat(n_traj=N_samples, first_guess=first_guess)
